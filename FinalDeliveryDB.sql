@@ -4,7 +4,7 @@ GO
 /*******************************************************************************
    Drop database if it exists
 ********************************************************************************/
-IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'PE_DBI202_Su2024')
+IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'DeliveryDB')
 BEGIN
 	ALTER DATABASE DeliveryDB SET OFFLINE WITH ROLLBACK IMMEDIATE;
 	ALTER DATABASE DeliveryDB SET ONLINE;
